@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
-*{
-    margin: 0 ;
+*{   
+    margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family:   'Mulish', sans-serif;
@@ -303,7 +303,7 @@ nav{
     }
     .viedo-on{
         position: absolute;
-       margin-left: 12.7%;
+       margin-left: 20%;
        margin-right: 10%;
         left: 0;
        border-radius: 5%;
@@ -312,17 +312,34 @@ nav{
     }
     .winter{
         position: relative;
+        
+        margin-left: 190px;
         top: 30px;
-        font-size: 100px;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #131318;
+        font-size: 60px;
         color: white
         
     }
     .explore{
         position: relative;
+        margin-left: 190px;
+        text-shadow:5px  #131318;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: #131318;
         top: 30px;
         font-size: 60px;
-        color: wheat
-        
+        color: wheat 
+    }
+    .discover{
+        position: relative;
+        margin-left: 190px;
+        text-shadow:5px  #131318;
+        -webkit-text-stroke-width: 3px;
+        -webkit-text-stroke-color: #131318;
+        top: 30px;
+        font-size: 60px;
+        color: wheat 
     }
 
     .dd{
@@ -626,10 +643,159 @@ nav{
     }
 
 
-
-
-
-
-
-
+    @media (0px < width <= 600px) {
+        /* Navbar  */
+        .container{
+            padding: 0.7rem 1rem;
+        }
+        .nav-left img{
+            width: 40px;
+        }
+        nav ul{
+            display: none;
+        }
+        .nav-right img{
+            width: 35px;
+            cursor: pointer;
+            display: block;
+        }
     
+        /* Hero Section  */
+        .hero-section-container{
+           
+           background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(255, 255, 255, 0.1)) , url(../Images/Group\ 13\ \(1\)\ \(1\).png);
+          
+        }
+        .input-div{
+            width: 90%;
+            grid-template-columns: 1fr;
+        }
+
+        .hero-section-container img{
+            width: 100%;
+        }
+        .hero-section-container h1{
+            font-size: 3rem;
+            text-align: center;
+        }
+        .input-div button{
+            padding: 0.5rem 0rem;
+        }
+    
+        /* Our Popular Tour Section  */
+        .popular-tour-container{
+            flex-direction: column;
+            margin-top: 3rem;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+        .popular-tour img{
+            width: 100%;
+        }
+        .popular-tour button{
+            font-size: 17px;
+        }
+        .popular-tour-left h1{
+            font-size: 2.5rem;
+        }
+    
+        /* Destination Section  */
+        .destination{
+            margin-top: 2rem;
+        }
+        .destination-top h1{
+            font-size: 2.1rem;
+        }
+        .destination-bottom{
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(7, 300px);
+        }
+        .div1, .div2, .div3, .div4, .div5, .div6, .div7{
+            justify-content: center;
+            align-items: center;
+            margin-right: 30px;
+            width: 335px;
+            height: 289px;
+            grid-column: 1 / span 10;
+        }
+    
+        /* Why Choose Us Section */
+        .why-choose-us{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 2rem;
+        }
+        .why-choose-us-bottom{
+            grid-template-columns: repeat(1, 1fr);
+            margin-top: 2rem;
+        }
+        .why-choose-us-bottom div{
+            padding: 1rem;
+        }
+        .why-choose-us-top h1{
+            font-size: 2.5rem;
+        }
+        .w-div3 , .w-div2 , .w-div1{
+            justify-content: center;
+            align-items: center;
+            width: 335px;
+            height: 289px; 
+            transform: translateX(0%);
+        }
+        
+        /* Video Background Section */
+        .viedo h1{
+            font-size: 20px;
+        }
+        .viedo h2{
+            font-size: 15px;
+        }
+        .viedo-on{
+            margin: 0px auto;
+            width: 100%
+        }
+    
+        /* Deals and Discount Section */
+        .dd{
+            margin-top: 2rem;
+        }
+        .dd__top h1{
+            font-size: 2.5rem;
+        }
+        .dd__div1, .dd__div2, .dd__div3{
+            padding: 1rem;
+        }
+        .dd__div1_inner_top, .dd__div2_inner_top, .dd__div3_inner_top{
+            flex-wrap: wrap;
+        }
+    
+        /* Video Section */
+        .video__section{
+            flex-direction: column;
+            margin-top: 2rem;
+            gap: 2rem;
+        }
+        .video__right video{
+                width: 100%;        
+        }
+        .video__left h1{
+            font-size: 2.5rem;
+        }
+    
+        /* Newsletter Section */
+        .newsletter__section{
+            flex-direction: column;
+            margin-top: 2rem;
+            gap: 2rem;
+        }
+        .newsletter__right{
+            width: 100%;
+            min-height: 300px;
+        }
+    }
+    @media (800px < width <= 1200px) {
+        .container{
+            margin: 0rem 2rem;
+        }
+    }
