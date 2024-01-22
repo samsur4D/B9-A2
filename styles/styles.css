@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap');
 *{   
+    
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -10,10 +11,11 @@
     --black-color: #131318;
     --gray-color: #5A5A5D;
 }
-.container{
+.root-container{
     max-width: 1200px;
     margin: auto;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -745,6 +747,9 @@ nav{
         }
         
         /* Video Background Section */
+        .viedo{
+            flex-direction: column;
+        }
         .viedo h1{
             font-size: 20px;
         }
@@ -752,7 +757,7 @@ nav{
             font-size: 15px;
         }
         .viedo-on{
-            margin: 0px auto;
+            /* margin: 0px auto; */
             width: 100%
         }
     
