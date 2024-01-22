@@ -60,8 +60,6 @@ nav{
     background-size: cover;
     border-radius: 30px;
     margin-top: 20px;
-    margin-left: 200px;
-    margin-right: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -643,10 +641,18 @@ nav{
         margin: 30px 0px;
         color: #5A5A5D;
     }
-
+    
+    @media (800px < width <= 1200px) {
+        .container{
+            margin: 0rem 2rem;
+        }
+    }
 
     @media (0px < width <= 600px) {
         /* Navbar  */
+        .root-container{
+            padding: 0.7rem 1rem;
+        }
         .container{
             padding: 0.7rem 1rem;
         }
